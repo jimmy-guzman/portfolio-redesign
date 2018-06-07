@@ -1,0 +1,17 @@
+.btn__primary {
+  background: transparent;
+  border: none;
+  outline: none;
+  font-size: em(24px);
+  color: $color-text-dark;
+  font-family: $font-family--primary;
+  &:hover {
+    cursor: pointer;
+  }
+  svg {
+    fill: $color-text-dark;
+    &:hover {
+      fill: $color-text-link--active;
+    }
+  }
+}

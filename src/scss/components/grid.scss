@@ -1,0 +1,7 @@
+.wrapper {
+  @include flex(flex, column, space-between, center);
+}
+
+// main {
+//   height: 100%;
+// }

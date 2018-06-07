@@ -1,0 +1,13 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  background: $color-bg-dark;
+}
+
+#root,
+.wrapper {
+  height: 100%;
+}

@@ -1,0 +1,35 @@
+body {
+  font-family: $font-family--primary;
+  color: $color-text-light;
+}
+
+a {
+  text-decoration: none;
+  color: $color-text-link--default;
+  &:hover,
+  &.active {
+    color: $color-text-link--active;
+  }
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+h1,
+h2 {
+  margin: 0;
+}
+
+.title {
+  text-align: center;
+  @include e(name) {
+    color: $color-text-base;
+    font-size: em(72px);
+  }
+  @include e(caption) {
+    color: $color-text-dark;
+    font-size: em(36px);
+  }
+}

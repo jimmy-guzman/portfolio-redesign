@@ -1,0 +1,24 @@
+.about {
+  width: 90%;
+  @include flex(flex, row wrap, center);
+  section {
+    width: 100%;
+    padding: em(16px);
+    font-size: em(18px);
+    @include mq(medium) {
+      width: 50%;
+    }
+    h1 {
+      color: $color-text-base;
+    }
+    li {
+      display: inline-block;
+      background: $white;
+      border-radius: em(3px);
+      color: $color-bg-dark;
+      padding: em(5px);
+      font-size: em(18px);
+      margin: em(6px);
+    }
+  }
+}

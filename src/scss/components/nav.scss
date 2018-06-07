@@ -1,0 +1,7 @@
+.main-nav {
+  width: 100%;
+  @include flex(flex, row, space-around, center);
+  a {
+    font-size: em(24px);
+  }
+}

@@ -1,0 +1,57 @@
+// font stacks
+$font-url--google: "https://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700";
+$font-family--primary: "Ubuntu Mono", monospace;
+// $font-family--secondary: "Lato", "Trebuchet MS", sans-serif;
+
+// font weights
+$font-weight--regular: 400;
+$font-weight--bold: 700;
+
+//descriptive color variables
+$white: #fff;
+$waikawa-gray: #577399;
+$spindle: #bdd5ea;
+$persimmon: #fe5f55;
+$mercury: #e3e3e3;
+$ebony-clay: #233142;
+
+// functional color variables
+$color-primary: $spindle;
+$color-secondary: $persimmon;
+$color-tertiary: $waikawa-gray;
+
+$color-bg-light: $mercury;
+$color-bg-dark: $ebony-clay;
+
+$color-text-light: $white;
+$color-text-base: $spindle;
+$color-text-dark: $waikawa-gray;
+
+$color-text-link--default: $color-primary;
+$color-text-link--active: $color-secondary;
+
+// // button colors
+// $btn--primary--bg: $keppel;
+// $btn--secondary--bg: $teal;
+// $btn--tertiary--bg: $shark;
+// $btn--primary--color: $mischka;
+// $btn--secondary--color: $white;
+// $btn--tertiary--color: $white;
+// text
+$base__font-size: 16px;
+// $base__line: 28px;
+// $letter-spacing-default: 2px;
+// $letter-spacing-less: 1px;
+// // border radius
+// $br--default: 0.3em;
+// $br--round: 50%;
+// breakpoints
+$brkpoint--sm: 480px;
+$brkpoint--md: 768px;
+$brkpoint--lg: 1024px;
+$brkpoint--xl: 1440px;
+// grid
+$g-col-width: 65px;
+$g-gutter-width: 20px;
+$g-col-count: 12;
+$g-cont-max-w: 1400px;
