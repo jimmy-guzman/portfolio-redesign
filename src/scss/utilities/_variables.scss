@@ -1,6 +1,7 @@
 // font stacks
-$font-url--google: "https://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700";
-$font-family--primary: "Ubuntu Mono", monospace;
+// $font-url--google: "https://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700";
+$font-family--primary: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+  Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 // $font-family--secondary: "Lato", "Trebuchet MS", sans-serif;
 
 // font weights
@@ -37,19 +38,23 @@ $color-text-link--active: $color-secondary;
 // $btn--primary--color: $mischka;
 // $btn--secondary--color: $white;
 // $btn--tertiary--color: $white;
+
 // text
 $base__font-size: 16px;
 // $base__line: 28px;
-// $letter-spacing-default: 2px;
-// $letter-spacing-less: 1px;
+$letter-spacing-default: 2px;
+$letter-spacing-less: 1px;
+
 // // border radius
 // $br--default: 0.3em;
 // $br--round: 50%;
+
 // breakpoints
 $brkpoint--sm: 480px;
 $brkpoint--md: 768px;
 $brkpoint--lg: 1024px;
 $brkpoint--xl: 1440px;
+
 // grid
 $g-col-width: 65px;
 $g-gutter-width: 20px;

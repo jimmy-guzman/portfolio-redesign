@@ -1,8 +1,10 @@
 * {
   box-sizing: border-box;
 }
-
-.wrapper {
+body {
   height: 100vh;
   background: $color-bg-dark;
+}
+.wrapper {
+  height: 100%;
 }
