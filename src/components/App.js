@@ -23,7 +23,7 @@ class App extends Component {
     const { isEnglish } = this.state;
     return (
       <BrowserRouter>
-        <div className="wrapper">
+        <div className="wrapper" style={{ height: `${window.innerHeight}px` }}>
           <Options updateLang={this.updateLang} isEnglish={isEnglish} />
           <Switch>
             <Route

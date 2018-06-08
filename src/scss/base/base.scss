@@ -2,12 +2,7 @@
   box-sizing: border-box;
 }
 
-body {
+.wrapper {
   height: 100vh;
   background: $color-bg-dark;
-}
-
-#root,
-.wrapper {
-  height: 100%;
 }
