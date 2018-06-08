@@ -19,10 +19,10 @@ const Options = props => (
       </button>
     </div>
     <div className="options__day-night">
-      <button className="btn__primary">
+      <button className="btn__primary" aria-label="Day Mode">
         <DaySVG height="24" width="24" />
       </button>
-      <button className="btn__primary">
+      <button className="btn__primary" aria-label="Night Mode">
         <NightSVG height="24" width="24" />
       </button>
     </div>

@@ -1,9 +1,7 @@
 import React, { Component } from "react";
-import { Link } from "react-router-dom";
 import projects from "../data/projects";
 
 import Project from "./Project";
-import ProjectList from "./ProjectList";
 
 import NextSVG from "./SVGs/NextSVG";
 import PrevSVG from "./SVGs/PrevSVG";
@@ -33,22 +31,27 @@ class Projects extends Component {
 
     this.setState({ projectIndex });
   };
-  updateIndex = index => {
-    let projectIndex = this.state.projectIndex;
-    projectIndex = index;
-    this.setState({ projectIndex });
-    this.toggleList();
-  };
 
   render() {
     return (
       <main className="projects">
-        <Project project={projects[this.state.projectIndex]} />
+        <Project
+          project={projects[this.state.projectIndex]}
+          isEnglish={this.props.isEnglish}
+        />
         <div className="projects__buttons">
-          <button className="btn__primary" onClick={this.renderPrev}>
+          <button
+            className="btn__primary"
+            onClick={this.renderPrev}
+            aria-label="Previous"
+          >
             <PrevSVG height={48} width={48} />
           </button>
-          <button className="btn__primary" onClick={this.renderNext}>
+          <button
+            className="btn__primary"
+            onClick={this.renderNext}
+            aria-label="Next"
+          >
             <NextSVG height={48} width={48} />
           </button>
         </div>

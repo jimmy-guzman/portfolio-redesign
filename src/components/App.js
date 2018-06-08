@@ -8,7 +8,6 @@ import Options from "./Options";
 import Home from "./Home";
 import About from "./About";
 import Projects from "./Projects";
-import ProjectsList from "./ProjectList";
 import Contact from "./Contact";
 
 class App extends Component {
@@ -21,32 +20,36 @@ class App extends Component {
     this.setState({ isEnglish });
   };
   render() {
+    const { isEnglish } = this.state;
     return (
       <BrowserRouter>
         <div className="wrapper">
-          <Options
-            updateLang={this.updateLang}
-            isEnglish={this.state.isEnglish}
-          />
+          <Options updateLang={this.updateLang} isEnglish={isEnglish} />
           <Switch>
             <Route
               exact
               path="/"
-              render={() => <Home isEnglish={this.state.isEnglish} />}
+              render={() => <Home isEnglish={isEnglish} />}
             />
             <Route
               path="/about"
-              render={() => <About isEnglish={this.state.isEnglish} />}
+              render={() => <About isEnglish={isEnglish} />}
             />
-            <Route path="/projects/" component={Projects} />
-            <Route path="/contact" component={Contact} />
+            <Route
+              path="/projects/"
+              render={() => <Projects isEnglish={isEnglish} />}
+            />
+            <Route
+              path="/contact"
+              render={() => <Contact isEnglish={isEnglish} />}
+            />
             <Route
               render={() => (
                 <h2>404 Error: URL does not match any existing paths!</h2>
               )}
             />
           </Switch>
-          <Nav isEnglish={this.state.isEnglish} />
+          <Nav isEnglish={isEnglish} />
         </div>
       </BrowserRouter>
     );
