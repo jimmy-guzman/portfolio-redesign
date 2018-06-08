@@ -4,9 +4,7 @@ const Home = props => (
   <div className="title">
     <h1 className="title__name">Jimmy Guzman</h1>
     <h2 className="title__caption">
-      {props.isEnglish
-        ? "Front End Web Developer"
-        : "Desarrollador de Web Front End"}
+      {props.isEnglish ? "Front End Web Developer" : "Desarrollador de Web"}
     </h2>
   </div>
 );

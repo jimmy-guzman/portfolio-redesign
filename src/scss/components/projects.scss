@@ -1,21 +1,27 @@
 .projects {
   width: 100%;
-  max-width: 768px;
+  @include mq(medium) {
+    max-width: 768px;
+  }
+  @include mq(large) {
+    max-width: 1024px;
+  }
   position: relative;
   @include flex(flex, column, space-between, center);
   @include e(buttons) {
     width: 100%;
+    position: absolute;
+    bottom: 0;
     @include flex(flex, row, space-between, center);
     @include mq(medium) {
-      position: absolute;
-      top: 50%;
+      bottom: 50%;
       @include flex(flex, row, space-between, center);
     }
   }
 }
 
 .project {
-  width: 100%;
+  width: 90%;
   @include mq(medium) {
     width: 80%;
   }
