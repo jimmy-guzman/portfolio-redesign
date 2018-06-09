@@ -25,30 +25,32 @@ class App extends Component {
       <BrowserRouter>
         <div className="wrapper" style={{ height: `${window.innerHeight}px` }}>
           <Options updateLang={this.updateLang} isEnglish={isEnglish} />
-          <Switch>
-            <Route
-              exact
-              path="/"
-              render={() => <Home isEnglish={isEnglish} />}
-            />
-            <Route
-              path="/about"
-              render={() => <About isEnglish={isEnglish} />}
-            />
-            <Route
-              path="/projects/"
-              render={() => <Projects isEnglish={isEnglish} />}
-            />
-            <Route
-              path="/contact"
-              render={() => <Contact isEnglish={isEnglish} />}
-            />
-            <Route
-              render={() => (
-                <h2>404 Error: URL does not match any existing paths!</h2>
-              )}
-            />
-          </Switch>
+          <main>
+            <Switch>
+              <Route
+                exact
+                path="/"
+                render={() => <Home isEnglish={isEnglish} />}
+              />
+              <Route
+                path="/about"
+                render={() => <About isEnglish={isEnglish} />}
+              />
+              <Route
+                path="/projects/"
+                render={() => <Projects isEnglish={isEnglish} />}
+              />
+              <Route
+                path="/contact"
+                render={() => <Contact isEnglish={isEnglish} />}
+              />
+              <Route
+                render={() => (
+                  <h2>404 Error: URL does not match any existing paths!</h2>
+                )}
+              />
+            </Switch>
+          </main>
           <Nav isEnglish={isEnglish} />
         </div>
       </BrowserRouter>

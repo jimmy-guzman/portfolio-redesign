@@ -2,6 +2,17 @@
   @include flex(flex, column, space-between, center);
 }
 
-// main {
-//   height: 100%;
-// }
+main {
+  height: 100%;
+  width: 100%;
+  background: $color-bg-dark;
+  @include flex(flex, column, center, center);
+}
+
+section {
+  height: 100%;
+  width: 100%;
+  position: relative;
+  background: $color-bg-light;
+  @include flex(flex, column, center, center);
+}

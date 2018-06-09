@@ -3,13 +3,13 @@
   border: none;
   outline: none;
   font-size: em(24px);
-  color: $color-text-dark;
+  color: $btn--primary--color;
   font-family: $font-family--primary;
   &:hover {
     cursor: pointer;
   }
   svg {
-    fill: $color-text-dark;
+    fill: $btn--primary--color;
     &:hover {
       fill: $color-text-link--active;
     }

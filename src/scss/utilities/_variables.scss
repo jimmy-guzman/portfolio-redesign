@@ -1,8 +1,7 @@
 // font stacks
-// $font-url--google: "https://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700";
-$font-family--primary: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-  Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-// $font-family--secondary: "Lato", "Trebuchet MS", sans-serif;
+$font-url--google: "https://fonts.googleapis.com/css?family=Lato|Oswald:400,700";
+$font-family--primary: "Oswald", Impact, "Franklin Gothic Bold", sans-serif;
+$font-family--secondary: "Lato", "Trebuchet MS", sans-serif;
 
 // font weights
 $font-weight--regular: 400;
@@ -15,39 +14,49 @@ $spindle: #bdd5ea;
 $persimmon: #fe5f55;
 $mercury: #e3e3e3;
 $ebony-clay: #233142;
+$bright-grey: #384047;
+$keppel: #40af93;
+$mischka: #d7d5d9;
+$shark: #292b2f;
+$teal: #018185;
 
 // functional color variables
-$color-primary: $spindle;
-$color-secondary: $persimmon;
-$color-tertiary: $waikawa-gray;
+$color-primary: $keppel;
+$color-secondary: $mischka;
+$color-tertiary: $shark;
 
-$color-bg-light: $mercury;
-$color-bg-dark: $ebony-clay;
+$color-bg-light: $mischka;
+$color-bg-base: $keppel;
+$color-bg-dark: $shark;
 
-$color-text-light: $white;
-$color-text-base: $spindle;
-$color-text-dark: $waikawa-gray;
+$color-text-light: $mischka;
+$color-text-base: $keppel;
+$color-text-dark: $shark;
 
-$color-text-link--default: $color-primary;
-$color-text-link--active: $color-secondary;
+$color-text-caption: $mischka;
 
-// // button colors
-// $btn--primary--bg: $keppel;
-// $btn--secondary--bg: $teal;
-// $btn--tertiary--bg: $shark;
-// $btn--primary--color: $mischka;
-// $btn--secondary--color: $white;
-// $btn--tertiary--color: $white;
+$color-text-link--default: $color-text-light;
+$color-text-link--active: $color-primary;
+
+$color-boxshadow: rgba(0, 0, 0, 0.8);
+// button colors
+$btn--primary--bg: $color-tertiary;
+$btn--secondary--bg: $color-primary;
+$btn--primary--color: $color-secondary;
+$btn--secondary--color: $color-primary;
 
 // text
 $base__font-size: 16px;
-// $base__line: 28px;
-$letter-spacing-default: 2px;
+$title__font-size: 128px;
+$caption__font-size: 72px;
+$base__line: 28px;
 $letter-spacing-less: 1px;
+$letter-spacing-default: 2px;
+$letter-spacing-more: 3px;
 
-// // border radius
-// $br--default: 0.3em;
-// $br--round: 50%;
+// border radius
+$br--default: 0.3em;
+$br--round: 50%;
 
 // breakpoints
 $brkpoint--sm: 480px;
