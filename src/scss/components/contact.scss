@@ -1,0 +1,10 @@
+.contact {
+  .card {
+    @include mq(medium) {
+      width: 50%;
+    }
+  }
+  ul {
+    @include flex(flex, row, space-around);
+  }
+}

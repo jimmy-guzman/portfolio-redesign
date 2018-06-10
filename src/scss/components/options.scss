@@ -1,6 +1,6 @@
 .options {
+  height: em(35px);
   width: 100%;
-  padding: em(8px);
   @include flex(flex, row, space-between, center);
   @include e(lang) {
   }
@@ -13,4 +13,21 @@
       color: $color-text-link--active;
     }
   }
+}
+
+.home-link {
+  padding: em(8px);
+  background: $color-bg-base;
+  color: $color-text-dark;
+  max-width: 500px;
+  &:hover {
+    color: $color-text-light;
+  }
+}
+.active-home {
+  background: inherit;
+  color: inherit;
+  padding: 0;
+  max-width: 0;
+  overflow: hidden;
 }

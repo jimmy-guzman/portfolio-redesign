@@ -1,11 +1,42 @@
 import React from "react";
 
+import GithubSVG from "./SVGs/GithubSVG";
+import EmailSVG from "./SVGs/EmailSVG";
+
 const Contact = ({ isEnglish }) => (
-  <section>
+  <section className="contact">
     <div className="card">
-      <a href="mailto:hello@jimmyguzman.com" target="_top">
-        hello@jimmyguzman.com
-      </a>
+      {isEnglish ? (
+        <p>
+          If you're interested in chatting, want more information about what
+          I've been working on, or inquire about freelance work. <br />
+          I'd love to hear from you!
+        </p>
+      ) : (
+        <p>
+          Si estás interesado en chatear, quieres más información sobre lo que
+          he estado trabajando, o preguntar sobre el trabajo independiente.{" "}
+          <br />
+          Me encantaría saber de usted!
+        </p>
+      )}
+
+      <ul>
+        <li>
+          <a href="mailto:hello@jimmyguzman.com">
+            <EmailSVG width="50" height="50" />
+          </a>
+        </li>
+        <li>
+          <a
+            href="https://github.com/jimmy-guzman"
+            target="_blank"
+            rel="noopener"
+          >
+            <GithubSVG width="50" height="50" />
+          </a>
+        </li>
+      </ul>
     </div>
   </section>
 );

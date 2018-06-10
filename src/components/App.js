@@ -13,17 +13,31 @@ import Contact from "./Contact";
 class App extends Component {
   state = {
     isEnglish: true,
-    nightMode: true
+    nightMode: true,
+    appHeight: window.innerHeight
   };
   updateLang = newLanguage => {
     let isEnglish = newLanguage !== "english" ? false : true;
     this.setState({ isEnglish });
   };
+
+  componentDidMount() {
+    window.addEventListener("resize", this.handleResize);
+  }
+
+  componentWillUnmount() {
+    window.removeEventListener("resize");
+  }
+
+  handleResize = () => {
+    this.setState({ appHeight: window.innerHeight });
+  };
+
   render() {
-    const { isEnglish } = this.state;
+    const { isEnglish, appHeight } = this.state;
     return (
       <BrowserRouter>
-        <div className="wrapper" style={{ height: `${window.innerHeight}px` }}>
+        <div className="wrapper" style={{ height: `${appHeight}px` }}>
           <Options updateLang={this.updateLang} isEnglish={isEnglish} />
           <main>
             <Switch>

@@ -13,7 +13,7 @@ const Options = props => (
         <NightSVG height="24" width="24" />
       </button>
     </div> */}
-    <NavLink exact to={"/"}>
+    <NavLink exact to={"/"} className="home-link" activeClassName="active-home">
       Jimmy Guzman
     </NavLink>
     <div className="options__lang">

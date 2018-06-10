@@ -6,9 +6,11 @@ body {
 a {
   text-decoration: none;
   color: $color-text-link--default;
+  fill: $color-text-link--default;
   &:hover,
   &.active {
     color: $color-text-link--active;
+    fill: $color-text-link--active;
   }
 }
 
@@ -25,6 +27,7 @@ h2 {
 p {
   letter-spacing: $letter-spacing-less;
   font-family: $font-family--secondary;
+  font-size: em(20px);
 }
 
 .title {

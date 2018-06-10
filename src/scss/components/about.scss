@@ -1,17 +1,18 @@
 .about {
-  @include flex(flex, row wrap);
+  @include mq(medium) {
+    @include flex(flex, row wrap);
+  }
   .card {
-    width: 100%;
     li {
       display: inline-block;
       background: $color-bg-light;
       border-radius: em(3px);
       color: $color-bg-dark;
       padding: em(5px);
-      font-size: em(16px);
+      font-size: em(18px);
       margin: em(6px);
       @include mq(medium) {
-        font-size: em(18px);
+        font-size: em(20px);
       }
     }
     @include mq(medium) {
