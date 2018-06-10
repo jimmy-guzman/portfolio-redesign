@@ -33,12 +33,18 @@ p {
     font-weight: $font-weight--regular;
     color: $color-text-base;
     letter-spacing: $letter-spacing-more;
-    font-size: $title__font-size;
+    font-size: $title__font-size / 2;
+    @include mq(medium) {
+      font-size: $title__font-size;
+    }
   }
   @include e(caption) {
     font-weight: $font-weight--regular;
     letter-spacing: $letter-spacing-more;
     color: $color-text-caption;
-    font-size: $caption__font-size;
+    font-size: $caption__font-size / 2;
+    @include mq(medium) {
+      font-size: $caption__font-size;
+    }
   }
 }

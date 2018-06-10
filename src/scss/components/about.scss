@@ -1,5 +1,5 @@
 .about {
-  @include flex(flex, row wrap, center);
+  @include flex(flex, row wrap);
   .card {
     width: 100%;
     li {

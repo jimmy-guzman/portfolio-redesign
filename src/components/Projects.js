@@ -2,9 +2,7 @@ import React, { Component } from "react";
 import projects from "../data/projects";
 
 import Project from "./Project";
-
-import NextSVG from "./SVGs/NextSVG";
-import PrevSVG from "./SVGs/PrevSVG";
+import ProjectButtons from "./ProjectButtons";
 
 class Projects extends Component {
   state = {
@@ -34,29 +32,15 @@ class Projects extends Component {
 
   render() {
     return (
-      <section>
-        <div className="projects">
-          <Project
-            project={projects[this.state.projectIndex]}
-            isEnglish={this.props.isEnglish}
-          />
-          <div className="projects__buttons">
-            <button
-              className="btn__primary card"
-              onClick={this.renderPrev}
-              aria-label="Previous"
-            >
-              <PrevSVG height={48} width={48} />
-            </button>
-            <button
-              className="btn__primary card"
-              onClick={this.renderNext}
-              aria-label="Next"
-            >
-              <NextSVG height={48} width={48} />
-            </button>
-          </div>
-        </div>
+      <section className="projects">
+        <Project
+          project={projects[this.state.projectIndex]}
+          isEnglish={this.props.isEnglish}
+        />
+        <ProjectButtons
+          renderNext={this.renderNext}
+          renderPrev={this.renderPrev}
+        />
       </section>
     );
   }

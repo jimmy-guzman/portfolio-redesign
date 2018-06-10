@@ -1,17 +1,8 @@
-.btn__primary {
-  background: transparent;
-  border: none;
-  outline: none;
-  font-size: em(24px);
-  color: $btn--primary--color;
-  font-family: $font-family--primary;
-  &:hover {
-    cursor: pointer;
+.btn {
+  @include e(primary) {
+    @include button-setup(primary);
   }
-  svg {
-    fill: $btn--primary--color;
-    &:hover {
-      fill: $color-text-link--active;
-    }
+  @include e(secondary) {
+    @include button-setup(secondary);
   }
 }

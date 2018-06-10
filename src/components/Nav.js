@@ -3,9 +3,6 @@ import { NavLink } from "react-router-dom";
 
 const Nav = props => (
   <nav className="main-nav">
-    <NavLink exact to="/">
-      {props.isEnglish ? "Home" : "Inicio"}
-    </NavLink>
     <NavLink to="/about">{props.isEnglish ? "About" : "Sobre Mi"}</NavLink>
     <NavLink to="/projects">
       {props.isEnglish ? "Projects" : "Proyectos"}

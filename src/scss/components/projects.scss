@@ -1,17 +1,16 @@
 .projects {
-  @include flex(flex, row, center, center);
   @include e(buttons) {
     position: absolute;
-    left: 10%;
-    right: 10%;
+    left: 0;
+    right: 0;
     bottom: 0;
-    button {
-      padding: 0;
-    }
     @include flex(flex, row, space-between, center);
     @include mq(medium) {
       bottom: 50%;
-      @include flex(flex, row, space-between, center);
+    }
+    @include mq(large) {
+      left: 10%;
+      right: 10%;
     }
   }
 }
@@ -20,10 +19,9 @@
   width: 100%;
   @include mq(medium) {
     max-width: 768px;
+    width: 80%;
   }
-  @include mq(large) {
-    max-width: 1200px;
-  }
+  margin: 0 auto;
   @include e(image) {
     padding: 0;
     position: relative;
@@ -85,8 +83,11 @@
       background: $color-bg-base;
       color: $color-text-dark;
       padding: em(4px);
-      font-size: em(18px);
+      font-size: em(16px);
       margin-bottom: em(8px);
+      @include mq(medium) {
+        font-size: em(18px);
+      }
     }
   }
   &:hover .project__overlay {

@@ -43,6 +43,19 @@
   flex: $flex;
 }
 
+// buttons
+@mixin button-setup($type) {
+  @extend %btn;
+  @extend %btn__#{$type};
+
+  &:focus {
+    @extend %btn__#{$type};
+  }
+  &:hover {
+    @extend %btn__#{$type}--hover;
+  }
+}
+
 // grid columns
 
 @mixin g-columns {
