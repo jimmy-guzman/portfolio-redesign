@@ -34,11 +34,7 @@ const About = props => (
     </div>
     <div className="card">
       <h1>{props.isEnglish ? "Skills:" : "Habilidades:"}</h1>
-      <ul>
-        {skills
-          .sort((a, b) => 0.5 - Math.random())
-          .map((skill, index) => <li key={index}>{skill}</li>)}
-      </ul>
+      <ul>{skills.map((skill, index) => <li key={index}>{skill}</li>)}</ul>
     </div>
   </section>
 );

@@ -9,11 +9,7 @@
       border-radius: em(3px);
       color: $color-bg-dark;
       padding: em(5px);
-      font-size: em(18px);
       margin: em(6px);
-      @include mq(medium) {
-        font-size: em(20px);
-      }
     }
     @include mq(medium) {
       width: 45%;

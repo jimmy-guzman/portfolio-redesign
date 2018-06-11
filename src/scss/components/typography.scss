@@ -1,6 +1,7 @@
 body {
   font-family: $font-family--primary;
   color: $color-text-light;
+  font-size: $base__font-size;
 }
 
 a {
@@ -27,7 +28,9 @@ h2 {
 p {
   letter-spacing: $letter-spacing-less;
   font-family: $font-family--secondary;
-  font-size: em(20px);
+  @include mq(medium) {
+    font-size: em(20px);
+  }
 }
 
 .title {

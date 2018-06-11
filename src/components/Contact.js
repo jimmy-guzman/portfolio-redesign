@@ -37,6 +37,9 @@ const Contact = ({ isEnglish }) => (
           </a>
         </li>
       </ul>
+      <p>
+        <a href="mailto:hello@jimmyguzman.com">hello@jimmyguzman.com</a>
+      </p>
     </div>
   </section>
 );

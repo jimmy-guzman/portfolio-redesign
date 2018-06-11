@@ -1,5 +1,6 @@
 .contact {
   .card {
+    text-align: center;
     @include mq(medium) {
       width: 50%;
     }

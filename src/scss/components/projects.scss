@@ -26,75 +26,42 @@
     padding: 0;
     position: relative;
     img {
-      border-radius: em(3px);
+      display: block;
       width: 100%;
     }
   }
-  @include e(name) {
-    z-index: 3;
-    position: absolute;
-    top: 0;
-    left: 0;
-    background: $color-bg-base;
+  @include e(bar) {
+    background: $color-bg-dark;
     color: $color-text-dark;
-    padding: em(4px);
     letter-spacing: $letter-spacing-more;
-    font-size: em(16px);
-    @include mq(medium) {
-      font-size: em(20px);
+    @include flex(flex, row, space-between, center);
+    span {
+      padding: em(8px);
+      background: $color-bg-base;
     }
   }
   @include e(links) {
-    transition: all 0.5s ease-in-out;
-    opacity: 0;
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    @include flex(flex, row, space-between, center);
+    margin-right: em(8px);
     a {
-      font-size: em(20px);
-      text-align: center;
-      padding: em(4px);
-      letter-spacing: $letter-spacing-more;
-      background: $color-bg-base;
-      color: $color-text-dark;
+      margin-left: em(16px);
     }
   }
-  @include e(overlay) {
-    transition: all 0.5s ease-in-out;
-    position: absolute;
-    bottom: 0;
-    opacity: 0;
-    width: 100%;
-    height: 100%;
-    @include flex(flex, column, center, center);
+  @include e(info) {
     background: $color-bg-dark;
     padding: em(16px);
   }
   @include e(desc) {
+    margin: 0;
   }
   @include e(tech) {
-    position: absolute;
-    right: 0;
-    top: 0;
-    text-align: right;
+    @include flex(flex, row wrap, space-around);
+    margin: em(4px) 0 em(16px);
     li {
-      background: $color-bg-base;
-      color: $color-text-dark;
-      padding: em(4px);
-      font-size: em(16px);
-      margin-bottom: em(8px);
-      @include mq(medium) {
-        font-size: em(18px);
-      }
+      background: $color-bg-light;
+      border-radius: em(3px);
+      color: $color-bg-dark;
+      padding: em(5px);
+      margin: 0 em(4px);
     }
-  }
-  &:hover .project__overlay {
-    opacity: 1;
-    z-index: 2;
-  }
-  &:hover .project__links {
-    opacity: 1;
-    z-index: 3;
   }
 }
