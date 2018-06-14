@@ -32,16 +32,18 @@ class Projects extends Component {
 
   render() {
     return (
-      <section className="projects">
-        <Project
-          project={projects[this.state.projectIndex]}
-          isEnglish={this.props.isEnglish}
-        />
-        <ProjectButtons
-          renderNext={this.renderNext}
-          renderPrev={this.renderPrev}
-        />
-      </section>
+      <main className="light">
+        <section className="projects grid__row">
+          <Project
+            project={projects[this.state.projectIndex]}
+            isEnglish={this.props.isEnglish}
+          />
+          <ProjectButtons
+            renderNext={this.renderNext}
+            renderPrev={this.renderPrev}
+          />
+        </section>
+      </main>
     );
   }
 }

@@ -4,6 +4,15 @@ body {
   font-size: $base__font-size;
 }
 
+main {
+  @include mq(medium) {
+    font-size: $base__font-size * 1.2;
+  }
+  @include mq(large) {
+    font-size: $base__font-size * 1.5;
+  }
+}
+
 a {
   text-decoration: none;
   color: $color-text-link--default;
@@ -28,9 +37,6 @@ h2 {
 p {
   letter-spacing: $letter-spacing-less;
   font-family: $font-family--secondary;
-  @include mq(medium) {
-    font-size: em(20px);
-  }
 }
 
 .title {

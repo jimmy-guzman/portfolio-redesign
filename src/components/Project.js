@@ -4,7 +4,7 @@ import GithubSVG from "./SVGs/GithubSVG";
 import DemoSVG from "./SVGs/DemoSVG";
 
 const Project = ({ project, isEnglish }) => (
-  <div className="project">
+  <div className="project grid__row">
     <div className="project__image card">
       <div className="project__bar">
         <span>{project.name}</span>
@@ -33,7 +33,11 @@ const Project = ({ project, isEnglish }) => (
       />
       <div className="project__info">
         <ul className="project__tech">
-          {project.tech.map((tech, index) => <li key={index}>{tech}</li>)}
+          {project.tech.map((tech, index) => (
+            <li className="badge" key={index}>
+              {tech}
+            </li>
+          ))}
         </ul>
         <p className="project__desc">
           {isEnglish ? project.description : project.spanish}
