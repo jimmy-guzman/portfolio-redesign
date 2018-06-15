@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import projects from "../data/projects";
+import PropTypes from "prop-types";
 
 import Project from "./Project";
 import ProjectButtons from "./ProjectButtons";
@@ -47,5 +48,9 @@ class Projects extends Component {
     );
   }
 }
+
+Projects.propTypes = {
+  isEnglish: PropTypes.bool.isRequired
+};
 
 export default Projects;

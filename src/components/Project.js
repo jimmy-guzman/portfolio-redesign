@@ -1,4 +1,5 @@
 import React from "react";
+import PropTypes from "prop-types";
 
 import GithubSVG from "./SVGs/GithubSVG";
 import DemoSVG from "./SVGs/DemoSVG";
@@ -46,5 +47,10 @@ const Project = ({ project, isEnglish }) => (
     </div>
   </div>
 );
+
+Project.propTypes = {
+  isEnglish: PropTypes.bool.isRequired,
+  project: PropTypes.object.isRequired
+};
 
 export default Project;

@@ -1,4 +1,5 @@
 import React from "react";
+import PropTypes from "prop-types";
 
 import GithubSVG from "./SVGs/GithubSVG";
 import EmailSVG from "./SVGs/EmailSVG";
@@ -45,5 +46,9 @@ const Contact = ({ isEnglish }) => (
     </section>
   </main>
 );
+
+Contact.propTypes = {
+  isEnglish: PropTypes.bool.isRequired
+};
 
 export default Contact;
