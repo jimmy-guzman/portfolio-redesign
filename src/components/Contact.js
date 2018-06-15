@@ -1,6 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 
+import contact from "../data/contact";
 import GithubSVG from "./SVGs/GithubSVG";
 import EmailSVG from "./SVGs/EmailSVG";
 
@@ -8,21 +9,7 @@ const Contact = ({ isEnglish }) => (
   <main className="light">
     <section className="contact grid__row">
       <div className="card grid__col--6">
-        {isEnglish ? (
-          <p>
-            If you're interested in chatting, want more information about what
-            I've been working on, or inquire about freelance work. <br />
-            I'd love to hear from you!
-          </p>
-        ) : (
-          <p>
-            Si estás interesado en chatear, quieres más información sobre lo que
-            he estado trabajando, o preguntar sobre el trabajo independiente.{" "}
-            <br />
-            Me encantaría saber de usted!
-          </p>
-        )}
-
+        <p>{isEnglish ? contact.english : contact.spanish}</p>
         <ul>
           <li>
             <a href="mailto:hello@jimmyguzman.com">

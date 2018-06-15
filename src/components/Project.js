@@ -1,6 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 
+import TechList from "./TechList";
 import GithubSVG from "./SVGs/GithubSVG";
 import DemoSVG from "./SVGs/DemoSVG";
 
@@ -33,13 +34,7 @@ const Project = ({ project, isEnglish }) => (
         alt={`Image of project ${project.name}`}
       />
       <div className="project__info">
-        <ul className="project__tech">
-          {project.tech.map((tech, index) => (
-            <li className="badge" key={index}>
-              {tech}
-            </li>
-          ))}
-        </ul>
+        <TechList techs={project.tech} />
         <p className="project__desc">
           {isEnglish ? project.description : project.spanish}
         </p>
