@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import projects from "../data/projects";
 import PropTypes from "prop-types";
-
+import { TransitionGroup, CSSTransition } from "react-transition-group";
 import Project from "./Project";
 import ProjectButtons from "./ProjectButtons";
 
@@ -39,6 +39,7 @@ class Projects extends Component {
             project={projects[this.state.projectIndex]}
             isEnglish={this.props.isEnglish}
           />
+
           <ProjectButtons
             renderNext={this.renderNext}
             renderPrev={this.renderPrev}
