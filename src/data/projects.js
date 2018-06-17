@@ -7,7 +7,7 @@ const projects = [
       "This Recipe Box was built with React, Redux and Sass. It's a webapp where the user is able to view, create and edit recipes.",
     spanish:
       "Esta Recipe Box fue construida con React, Redux y Sass. Es una aplicación de web en la que el usuario puede ver, crear y editar recetas.",
-    tech: ["React", "Redux", "JavaScript", "Sass", "JSX", "Parcel"]
+    tech: ["ReactJS", "Redux", "JavaScript", "Sass", "JSX", "Parcel"]
   },
   // {
   //   name: "fcc Camper Leaderboard",
@@ -17,7 +17,7 @@ const projects = [
   //     "The fcc Camper Leaderboard is a webapp built with React where the user is able to see the brownie points leaderboard according to their selection.",
   //   spanish:
   //     "La fcc Camper Leaderboard es una aplicación de web echa con React. El usuario puede ver la tabla de puntuaciones de brownie dependiendo de su selección.",
-  //   tech: ["React", "JavaScript", "JSX", "Parcel"]
+  //   tech: ["ReactJS", "JavaScript", "JSX", "Parcel"]
   // },
   // {
   //   name: "React Flickr Gallery",
@@ -27,7 +27,7 @@ const projects = [
   //     "The React Flickr Gallery is an image gallery made in react that pulls images from the Flickr API based on the user's search.",
   //   spanish:
   //     "La React Flickr Gallery es una galería echa con React que baja imágenes del API de Flickr basado en la busqueda del usuario.",
-  //   tech: ["React", "CSS", "JavaScript"]
+  //   tech: ["ReactJS", "CSS", "JavaScript"]
   // },
   {
     name: "Markdown Previewer",
@@ -37,7 +37,7 @@ const projects = [
       "The Markdown Previewer is a webapp that incorporates both React and Sass to render a preview of markdown in real time.",
     spanish:
       "El Markdown Previewer es una aplicación de web que incorpora React y Sass para renderizar Markdown en tiempo real.",
-    tech: ["React", "Sass", "marked.js"]
+    tech: ["ReactJS", "Sass", "marked.js"]
   },
   // {
   //   name: "Simon Game",
@@ -54,7 +54,7 @@ const projects = [
     repo: "tictactoegame",
     url: "https://jimmy-guzman.github.io/tictactoegame/",
     description:
-      "The Tic Tac Toe game was part of freeCodeCamp advanced front end projects curriculum. The user is able to play tic tac toe versus the computer.",
+      "In this Tic Tac Toe Game user is able to play tic tac toe versus the computer. The computer ai is based on the minimax algorithm.",
     spanish:
       "El juego Tic Tac Toe fue parte del currículum de proyectos avanzados de FreeCodeCamp. El usuario puede jugar tres en raya contra la computadora.",
     tech: ["JavaScript", "HTML", "CSS"]
@@ -99,16 +99,16 @@ const projects = [
       "Tablero web completo con tablas y gráficos guiados por JavaScript.",
     tech: ["JavaScript", "ChartJS", "Sass", "HTML"]
   },
-  {
-    repo: "randomquotegenerator",
-    name: "Random Quote Generator",
-    url: "https://jimmy-guzman.github.io/randomquotegenerator/",
-    description:
-      "The random quote generator uses an API to grab a random quote. The user is also able to tweet the random quote.",
-    spanish:
-      "El Random Quote Generator usa una API para obtener una cotización aleatoria. El usuario también puede twittear la cita aleatoria.",
-    tech: ["JavaScript", "AJAX", "HTML", "CSS"]
-  },
+  // {
+  //   repo: "randomquotegenerator",
+  //   name: "Random Quote Generator",
+  //   url: "https://jimmy-guzman.github.io/randomquotegenerator/",
+  //   description:
+  //     "The random quote generator uses an API to grab a random quote. The user is also able to tweet the random quote.",
+  //   spanish:
+  //     "El Random Quote Generator usa una API para obtener una cotización aleatoria. El usuario también puede twittear la cita aleatoria.",
+  //   tech: ["JavaScript", "AJAX", "HTML", "CSS"]
+  // },
   // {
   //   repo: "localweatherapp",
   //   name: "Local Weather App",
