@@ -54,9 +54,9 @@ const projects = [
     repo: "tictactoegame",
     url: "https://jimmy-guzman.github.io/tictactoegame/",
     description:
-      "In this Tic Tac Toe Game user is able to play tic tac toe versus the computer. The computer ai is based on the minimax algorithm.",
+      "In this Tic Tac Toe Game, the user is able to play tic tac toe versus the computer. The computer ai is based on the minimax algorithm.",
     spanish:
-      "El juego Tic Tac Toe fue parte del currículum de proyectos avanzados de FreeCodeCamp. El usuario puede jugar tres en raya contra la computadora.",
+      "En este juego de Tic Tac Toe, el usuario puede jugar tres en raya contra la computadora. El A.I. del la computadora es basado en el algoritmo minimax.",
     tech: ["JavaScript", "HTML", "CSS"]
   },
   {
@@ -64,9 +64,9 @@ const projects = [
     name: "Pomodoro Clock",
     url: "https://jimmy-guzman.github.io/pomodoroclock/",
     description:
-      "This Pomodoro Clock was part of freeCodeCamp's advanced front end projects curriculum. It's a web app that acts as minimalist Pomodoro Technique timer with options.",
+      "This Pomodoro Clock is a web app that acts as minimalist Pomodoro Technique timer with options for user ease.",
     spanish:
-      "El Pomodoro Clock fue parte del plan de estudios avanzado de freeCodeCamp. Es una aplicación de web que actúa como un minutero minimalista de Pomodoro Technique con opciones.",
+      "Este Pomodoro Clock es una aplicación de web que actúa como un temporizador minimalista de Pomodoro Technique con opciones para la facilidad del usuario.",
     tech: ["JavaScript", "HTML", "CSS"]
   },
   {
@@ -74,9 +74,9 @@ const projects = [
     name: "Javascript Calculator",
     url: "https://jimmy-guzman.github.io/javascriptcalculator/",
     description:
-      "Javascript Calculator was part of freeCodeCamp's advanced front end projects curriculum. It's a web app that replicates a basic calculator through Javascript.",
+      "The Javascript Calculator is a web app that replicates a basic calculator through Javascript.",
     spanish:
-      "La Javascript Calculator fue parte del plan de estudios avanzado de freeCodeCamp. Es una aplicación de web que replica una calculadora básica a través de Javascript.",
+      "La Calculadora de Javascript es una aplicación se web que replica una calculadora básica a través de Javascript.",
     tech: ["JavaScript", "HTML", "CSS"]
   },
   {
