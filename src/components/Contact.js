@@ -4,6 +4,7 @@ import PropTypes from "prop-types";
 import contact from "../data/contact";
 import GithubSVG from "./SVGs/GithubSVG";
 import EmailSVG from "./SVGs/EmailSVG";
+import LinkedinSVG from "./SVGs/LinkedinSVG";
 
 const Contact = ({ isEnglish }) => (
   <main className="light">
@@ -14,6 +15,15 @@ const Contact = ({ isEnglish }) => (
           <li>
             <a href="mailto:hello@jimmyguzman.com">
               <EmailSVG width="50" height="50" />
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://www.linkedin.com/in/jimmy-guzman-87bb2714a/"
+              target="_blank"
+              rel="noopener"
+            >
+              <LinkedinSVG width="50" height="50" />
             </a>
           </li>
           <li>
