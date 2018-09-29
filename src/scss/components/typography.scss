@@ -4,15 +4,6 @@ body {
   font-size: $base__font-size;
 }
 
-main {
-  @include mq(medium) {
-    font-size: $base__font-size * 1.2;
-  }
-  @include mq(large) {
-    font-size: $base__font-size * 1.5;
-  }
-}
-
 a {
   text-decoration: none;
   color: $color-text-link--default;
