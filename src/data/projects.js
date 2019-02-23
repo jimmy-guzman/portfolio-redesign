@@ -83,16 +83,20 @@ const projects = [
     repo: 'employeedirectorydashboard',
     name: 'Employee Directory Dashboard',
     url: 'https://jimmy-guzman.github.io/employeedirectorydashboard/',
-    description: 'Employee directory dashboard that communicates with a third-party API.',
-    spanish: 'Tablero de directorios de empleados que se comunica con una API de terceros',
+    description:
+      'Employee directory dashboard that communicates with a third-party API.',
+    spanish:
+      'Tablero de directorios de empleados que se comunica con una API de terceros',
     tech: ['JavaScript', 'jQuery', 'HTML', 'CSS']
   },
   {
     repo: 'webappdashboard',
     name: 'Web App Dashboard',
     url: 'https://jimmy-guzman.github.io/webappdashboard/',
-    description: 'Web dashboard complete with JavaScript-driven charts and graphs.',
-    spanish: 'Tablero web completo con tablas y gráficos guiados por JavaScript.',
+    description:
+      'Web dashboard complete with JavaScript-driven charts and graphs.',
+    spanish:
+      'Tablero web completo con tablas y gráficos guiados por JavaScript.',
     tech: ['JavaScript', 'ChartJS', 'Sass', 'HTML']
   },
   // {
