@@ -27,13 +27,7 @@
     "img-loader": "^3.0.0",
     "mini-css-extract-plugin": "^0.4.0",
     "node-sass": "^4.11.0",
-    "normalize.css": "^8.0.0",
     "postcss-loader": "^2.1.5",
-    "react": "^16.4.0",
-    "react-dom": "^16.4.0",
-    "react-proptypes": "^1.0.0",
-    "react-router-dom": "^4.3.1",
-    "react-transition-group": "^2.3.1",
     "sass-loader": "^7.0.3",
     "url-loader": "^1.0.1",
     "webpack": "^4.12.0",
@@ -41,6 +35,12 @@
     "webpack-dev-server": "^3.2.0"
   },
   "dependencies": {
+    "normalize.css": "^8.0.0",
+    "react": "^16.4.0",
+    "react-dom": "^16.4.0",
+    "react-proptypes": "^1.0.0",
+    "react-router-dom": "^4.3.1",
+    "react-transition-group": "^2.3.1",
     "webfontloader": "^1.6.28"
   }
 }
