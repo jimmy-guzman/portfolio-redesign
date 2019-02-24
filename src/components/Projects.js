@@ -32,8 +32,8 @@ class Projects extends Component {
 
   render () {
     return (
-      <main className="light">
-        <section className="projects grid__row">
+      <main className='light'>
+        <section className='projects grid__row'>
           <Project
             project={projects[this.state.projectIndex]}
             isEnglish={this.props.isEnglish}

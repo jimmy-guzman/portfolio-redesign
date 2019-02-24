@@ -15,10 +15,6 @@ class App extends Component {
     nightMode: true,
     appHeight: window.innerHeight
   }
-  updateLang = newLanguage => {
-    let isEnglish = newLanguage === 'english'
-    this.setState({ isEnglish })
-  }
 
   componentDidMount () {
     window.addEventListener('resize', this.handleResize)
@@ -32,28 +28,33 @@ class App extends Component {
     this.setState({ appHeight: window.innerHeight })
   }
 
+  updateLang = newLanguage => {
+    let isEnglish = newLanguage === 'english'
+    this.setState({ isEnglish })
+  }
+
   render () {
     const { isEnglish, appHeight } = this.state
     return (
       <BrowserRouter>
-        <div className="wrapper" style={{ height: `${appHeight}px` }}>
+        <div className='wrapper' style={{ height: `${appHeight}px` }}>
           <Options updateLang={this.updateLang} isEnglish={isEnglish} />
           <Switch>
             <Route
               exact
-              path="/"
+              path='/'
               render={() => <Home isEnglish={isEnglish} />}
             />
             <Route
-              path="/about"
+              path='/about'
               render={() => <About isEnglish={isEnglish} />}
             />
             <Route
-              path="/projects/"
+              path='/projects/'
               render={() => <Projects isEnglish={isEnglish} />}
             />
             <Route
-              path="/contact"
+              path='/contact'
               render={() => <Contact isEnglish={isEnglish} />}
             />
             <Route
