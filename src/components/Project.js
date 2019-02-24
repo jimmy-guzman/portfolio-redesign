@@ -22,7 +22,7 @@ const Project = ({ project, isEnglish }) => {
               rel='noopener noreferrer'
               aria-label='View Demo'
             >
-              <DemoSVG height={24} width={24} />
+              <DemoSVG height='24' width='24' />
             </a>
             <a
               href={`https://github.com/jimmy-guzman/${project.repo}`}
@@ -30,7 +30,7 @@ const Project = ({ project, isEnglish }) => {
               rel='noopener noreferrer'
               aria-label='View Repo'
             >
-              <GithubSVG height={24} width={24} />
+              <GithubSVG height='24' width='24' />
             </a>
           </div>
         </div>

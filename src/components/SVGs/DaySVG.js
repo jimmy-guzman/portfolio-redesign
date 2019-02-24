@@ -1,5 +1,5 @@
 import React from 'react'
-import { number } from 'prop-types'
+import { string } from 'prop-types'
 
 const DaySVG = ({ height, width }) => (
   <svg
@@ -13,8 +13,8 @@ const DaySVG = ({ height, width }) => (
 )
 
 DaySVG.propTypes = {
-  height: number.isRequired,
-  width: number.isRequired
+  height: string.isRequired,
+  width: string.isRequired
 }
 
 export default DaySVG

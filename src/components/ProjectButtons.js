@@ -12,7 +12,7 @@ const ProjectButtons = ({ renderNext, renderPrev }) => (
       onClick={renderPrev}
       aria-label='Previous'
     >
-      <PrevSVG height={48} width={48} />
+      <PrevSVG height='48' width='48' />
     </button>
     <button
       type='button'
@@ -20,7 +20,7 @@ const ProjectButtons = ({ renderNext, renderPrev }) => (
       onClick={renderNext}
       aria-label='Next'
     >
-      <NextSVG height={48} width={48} />
+      <NextSVG height='48' width='48' />
     </button>
   </div>
 )
