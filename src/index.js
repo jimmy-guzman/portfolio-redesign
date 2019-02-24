@@ -1,10 +1,10 @@
 import 'normalize.css'
 import './scss/index.scss'
-import App from './components/App'
 import React from 'react'
 import { render } from 'react-dom'
 
 import WebFont from 'webfontloader'
+import App from './components/App'
 
 WebFont.load({
   google: {

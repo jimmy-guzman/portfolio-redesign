@@ -1,5 +1,5 @@
 import React from 'react'
-import PropTypes from 'prop-types'
+import { bool, shape, string } from 'prop-types'
 
 import TechList from './TechList'
 import GithubSVG from './SVGs/GithubSVG'
@@ -35,6 +35,7 @@ const Project = ({ project, isEnglish }) => {
           </div>
         </div>
         <img
+          alt={`${project.name}`}
           srcSet={`${imgUrl} 1x,
         ${imgUrl}&fit=max&q=40&dpr=2 2x,
         ${imgUrl}&fit=max&q=20&dpr=3 3x`}
@@ -52,8 +53,14 @@ const Project = ({ project, isEnglish }) => {
 }
 
 Project.propTypes = {
-  isEnglish: PropTypes.bool.isRequired,
-  project: PropTypes.object.isRequired
+  isEnglish: bool.isRequired,
+  project: shape({
+    name: string,
+    url: string,
+    repo: string,
+    description: string,
+    spanish: string
+  }).isRequired
 }
 
 export default Project

@@ -1,10 +1,10 @@
 import React from 'react'
-import PropTypes from 'prop-types'
+import { arrayOf, string } from 'prop-types'
 
 const TechList = ({ techs }) => (
   <ul style={{ textAlign: 'center' }}>
-    {techs.map((tech, index) => (
-      <li className='badge' key={index}>
+    {techs.map(tech => (
+      <li className='badge' key={tech}>
         {tech}
       </li>
     ))}
@@ -12,7 +12,7 @@ const TechList = ({ techs }) => (
 )
 
 TechList.propTypes = {
-  techs: PropTypes.array.isRequired
+  techs: arrayOf(string).isRequired
 }
 
 export default TechList

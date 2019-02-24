@@ -12,15 +12,14 @@ import Contact from './Contact'
 class App extends Component {
   state = {
     isEnglish: true,
-    nightMode: true,
     appHeight: window.innerHeight
   }
 
-  componentDidMount () {
+  componentDidMount() {
     window.addEventListener('resize', this.handleResize)
   }
 
-  componentWillUnmount () {
+  componentWillUnmount() {
     window.removeEventListener('resize')
   }
 
@@ -29,11 +28,11 @@ class App extends Component {
   }
 
   updateLang = newLanguage => {
-    let isEnglish = newLanguage === 'english'
+    const isEnglish = newLanguage === 'english'
     this.setState({ isEnglish })
   }
 
-  render () {
+  render() {
     const { isEnglish, appHeight } = this.state
     return (
       <BrowserRouter>

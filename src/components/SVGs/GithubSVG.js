@@ -1,5 +1,5 @@
 import React from 'react'
-import { string } from 'prop-types'
+import { number } from 'prop-types'
 
 const GithubSVG = ({ height, width }) => (
   <svg
@@ -13,8 +13,8 @@ const GithubSVG = ({ height, width }) => (
 )
 
 GithubSVG.propTypes = {
-  height: string.isRequired,
-  width: string.isRequired
+  height: number.isRequired,
+  width: number.isRequired
 }
 
 export default GithubSVG

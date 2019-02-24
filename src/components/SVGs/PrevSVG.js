@@ -1,5 +1,5 @@
 import React from 'react'
-import { string } from 'prop-types'
+import { number } from 'prop-types'
 
 const PrevSVG = ({ height, width }) => (
   <svg
@@ -13,8 +13,8 @@ const PrevSVG = ({ height, width }) => (
 )
 
 PrevSVG.propTypes = {
-  height: string.isRequired,
-  width: string.isRequired
+  height: number.isRequired,
+  width: number.isRequired
 }
 
 export default PrevSVG
