@@ -1,6 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import about from '../data/about'
+import about from '../data/about.json'
 
 import TechList from './TechList'
 
