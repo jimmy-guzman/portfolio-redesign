@@ -29,11 +29,13 @@ class App extends Component {
 
   updateLang = newLanguage => {
     const isEnglish = newLanguage === 'english'
+
     this.setState({ isEnglish })
   }
 
   render() {
     const { isEnglish, appHeight } = this.state
+
     return (
       <BrowserRouter>
         <div className='wrapper' style={{ height: `${appHeight}px` }}>

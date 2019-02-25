@@ -11,6 +11,7 @@ class Projects extends Component {
 
   renderNext = () => {
     let { projectIndex } = this.state
+
     if (projectIndex === projects.length - 1) {
       projectIndex = 0
     } else {
@@ -22,6 +23,7 @@ class Projects extends Component {
 
   renderPrev = () => {
     let { projectIndex } = this.state
+
     if (projectIndex === 0) {
       projectIndex = projects.length - 1
     } else {
