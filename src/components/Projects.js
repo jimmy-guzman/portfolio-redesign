@@ -6,7 +6,8 @@ import ProjectButtons from './ProjectButtons'
 
 class Projects extends Component {
   state = {
-    projectIndex: 0
+    projectIndex: 0,
+    loadingProjectImage: true
   }
 
   renderNext = () => {
@@ -18,7 +19,7 @@ class Projects extends Component {
       projectIndex += 1
     }
 
-    this.setState({ projectIndex })
+    this.setState({ projectIndex, loadingProjectImage: true })
   }
 
   renderPrev = () => {
@@ -30,17 +31,26 @@ class Projects extends Component {
       projectIndex += 1
     }
 
-    this.setState({ projectIndex })
+    this.setState({ projectIndex, loadingProjectImage: true })
+  }
+
+  onProjectImageLoaded = () => {
+    this.setState({ loadingProjectImage: false })
   }
 
   render() {
-    const { projectIndex } = this.state
+    const { projectIndex, loadingProjectImage } = this.state
     const { isEnglish } = this.props
 
     return (
       <main className='light'>
         <section className='projects grid__row'>
-          <Project project={projects[projectIndex]} isEnglish={isEnglish} />
+          <Project
+            loadingProjectImage={loadingProjectImage}
+            project={projects[projectIndex]}
+            isEnglish={isEnglish}
+            onProjectImageLoaded={this.onProjectImageLoaded}
+          />
           <ProjectButtons
             renderNext={this.renderNext}
             renderPrev={this.renderPrev}
