@@ -1,43 +1,60 @@
 import React, { Component } from 'react'
-import projects from '../data/projects'
 import PropTypes from 'prop-types'
-import { TransitionGroup, CSSTransition } from 'react-transition-group'
+import { projects } from '../data/projects.json'
 import Project from './Project'
 import ProjectButtons from './ProjectButtons'
 
 class Projects extends Component {
   state = {
     projectIndex: 0,
-    showList: false
+    loadingProjectImage: true
   }
+
   renderNext = () => {
-    let projectIndex = this.state.projectIndex
+    let { projectIndex } = this.state
+
     if (projectIndex === projects.length - 1) {
       projectIndex = 0
     } else {
-      projectIndex++
+      projectIndex += 1
     }
 
-    this.setState({ projectIndex })
+    this.setState({ projectIndex, loadingProjectImage: true })
   }
+
   renderPrev = () => {
-    let projectIndex = this.state.projectIndex
+    let { projectIndex } = this.state
+
     if (projectIndex === 0) {
       projectIndex = projects.length - 1
     } else {
-      projectIndex--
+      projectIndex += 1
     }
 
-    this.setState({ projectIndex })
+    this.setState({ projectIndex, loadingProjectImage: true })
   }
 
-  render () {
+  onProjectImageLoaded = () => {
+    this.setState({ loadingProjectImage: false })
+  }
+
+  render() {
+    const { projectIndex, loadingProjectImage } = this.state
+    const { isEnglish } = this.props
+
     return (
       <main className='light'>
         <section className='projects grid__row'>
-          <Project project={projects[this.state.projectIndex]} isEnglish={this.props.isEnglish} />
-
-          <ProjectButtons renderNext={this.renderNext} renderPrev={this.renderPrev} />
+          <Project
+            loadingProjectImage={loadingProjectImage}
+            project={projects[projectIndex]}
+            isEnglish={isEnglish}
+            onProjectImageLoaded={this.onProjectImageLoaded}
+          />
+          <ProjectButtons
+            renderNext={this.renderNext}
+            renderPrev={this.renderPrev}
+          />
         </section>
       </main>
     )
