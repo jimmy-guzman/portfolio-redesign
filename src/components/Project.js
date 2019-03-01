@@ -4,7 +4,7 @@ import { bool, shape, string, func } from 'prop-types'
 import TechList from './TechList'
 import GithubSVG from './SVGs/GithubSVG'
 import DemoSVG from './SVGs/DemoSVG'
-import ProgressBar from './ProgressBar'
+import { ProgressBar, Indeterminate } from './styles/ProgressBar'
 
 const Project = ({
   project,
@@ -40,7 +40,11 @@ const Project = ({
             </a>
           </div>
         </div>
-        {loadingProjectImage && <ProgressBar />}
+        {loadingProjectImage && (
+          <ProgressBar>
+            <Indeterminate />
+          </ProgressBar>
+        )}
         <img
           style={{ ...(loadingProjectImage && { visibility: 'hidden' }) }}
           onLoad={onProjectImageLoaded}
