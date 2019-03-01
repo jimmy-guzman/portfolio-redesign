@@ -1,5 +1,5 @@
 import React from 'react'
-import PropTypes from 'prop-types'
+import { bool } from 'prop-types'
 
 import contact from '../data/contact.json'
 
@@ -44,7 +44,7 @@ const Contact = ({ isEnglish }) => (
 )
 
 Contact.propTypes = {
-  isEnglish: PropTypes.bool.isRequired
+  isEnglish: bool.isRequired
 }
 
 export default Contact

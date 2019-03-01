@@ -1,5 +1,5 @@
 import React from 'react'
-import PropTypes from 'prop-types'
+import { bool } from 'prop-types'
 import { NavLink } from 'react-router-dom'
 
 const Nav = ({ isEnglish }) => (
@@ -11,7 +11,7 @@ const Nav = ({ isEnglish }) => (
 )
 
 Nav.propTypes = {
-  isEnglish: PropTypes.bool.isRequired
+  isEnglish: bool.isRequired
 }
 
 export default Nav

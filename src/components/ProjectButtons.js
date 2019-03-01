@@ -1,5 +1,5 @@
 import React from 'react'
-import PropTypes from 'prop-types'
+import { func } from 'prop-types'
 
 import { NextSVG, PrevSVG } from './svgs'
 
@@ -25,8 +25,8 @@ const ProjectButtons = ({ renderNext, renderPrev }) => (
 )
 
 ProjectButtons.propTypes = {
-  renderPrev: PropTypes.func.isRequired,
-  renderNext: PropTypes.func.isRequired
+  renderPrev: func.isRequired,
+  renderNext: func.isRequired
 }
 
 export default ProjectButtons

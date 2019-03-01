@@ -1,5 +1,5 @@
 import React from 'react'
-import PropTypes from 'prop-types'
+import { bool } from 'prop-types'
 
 const Home = ({ isEnglish }) => (
   <div className='title'>
@@ -13,7 +13,7 @@ const Home = ({ isEnglish }) => (
 )
 
 Home.propTypes = {
-  isEnglish: PropTypes.bool.isRequired
+  isEnglish: bool.isRequired
 }
 
 export default Home

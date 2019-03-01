@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import PropTypes from 'prop-types'
+import { bool } from 'prop-types'
 import { projects } from '../data/projects.json'
 
 import { Project, ProjectButtons } from '../components'
@@ -62,7 +62,7 @@ class Projects extends Component {
 }
 
 Projects.propTypes = {
-  isEnglish: PropTypes.bool.isRequired
+  isEnglish: bool.isRequired
 }
 
 export default Projects

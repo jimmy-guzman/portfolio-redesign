@@ -1,5 +1,5 @@
 import React from 'react'
-import PropTypes from 'prop-types'
+import { bool } from 'prop-types'
 import about from '../data/about.json'
 
 import { TechList } from '../components'
@@ -20,7 +20,7 @@ const About = ({ isEnglish }) => (
 )
 
 About.propTypes = {
-  isEnglish: PropTypes.bool.isRequired
+  isEnglish: bool.isRequired
 }
 
 export default About
