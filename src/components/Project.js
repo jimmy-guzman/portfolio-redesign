@@ -40,20 +40,22 @@ const Project = ({
             </a>
           </div>
         </div>
-        {loadingProjectImage && (
-          <ProgressBar>
-            <Indeterminate />
-          </ProgressBar>
-        )}
-        <img
-          style={{ ...(loadingProjectImage && { visibility: 'hidden' }) }}
-          onLoad={onProjectImageLoaded}
-          alt={`${project.name}`}
-          srcSet={`${imgUrl} 1x,
+        <div>
+          {loadingProjectImage && (
+            <ProgressBar>
+              <Indeterminate />
+            </ProgressBar>
+          )}
+          <img
+            style={{ ...(loadingProjectImage && { visibility: 'hidden' }) }}
+            onLoad={onProjectImageLoaded}
+            alt={`${project.name}`}
+            srcSet={`${imgUrl} 1x,
         ${imgUrl}&fit=max&q=40&dpr=2 2x,
         ${imgUrl}&fit=max&q=20&dpr=3 3x`}
-          src={`${imgUrl}`}
-        />
+            src={`${imgUrl}`}
+          />
+        </div>
         <div className='project__info'>
           <TechList techs={project.tech} />
           <p className='project__desc'>

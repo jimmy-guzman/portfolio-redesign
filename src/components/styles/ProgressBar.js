@@ -31,7 +31,7 @@ const ShortIndeterminateAnimation = keyframes`
 `
 
 const Indeterminate = styled.div`
-  background-color: #018185;
+  background-color: ${({ theme: { tertiary } }) => tertiary};
   &:before {
     content: '';
     position: absolute;
@@ -58,12 +58,12 @@ const Indeterminate = styled.div`
 `
 
 const ProgressBar = styled.div`
-  margin: 0;
+  margin: 0 0 -8px;
   position: relative;
   height: 8px;
   display: block;
   width: 100%;
-  background-color: #292b2f;
+  background-color: ${({ theme: { primary } }) => primary};
   overflow: hidden;
 `
 
