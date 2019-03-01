@@ -2,8 +2,7 @@ import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 import { projects } from '../data/projects.json'
 
-import Project from '../components/Project'
-import ProjectButtons from '../components/ProjectButtons'
+import { Project, ProjectButtons } from '../components'
 
 class Projects extends Component {
   state = {

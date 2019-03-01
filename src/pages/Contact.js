@@ -2,9 +2,8 @@ import React from 'react'
 import PropTypes from 'prop-types'
 
 import contact from '../data/contact.json'
-import GithubSVG from '../components/SVGs/GithubSVG'
-import EmailSVG from '../components/SVGs/EmailSVG'
-import LinkedinSVG from '../components/SVGs/LinkedinSVG'
+
+import { GithubSVG, EmailSVG, LinkedinSVG } from '../components/SVGs'
 
 const Contact = ({ isEnglish }) => (
   <main className='light'>

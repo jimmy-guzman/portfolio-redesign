@@ -1,9 +1,7 @@
 import React, { Component } from 'react'
 import { BrowserRouter, Route, Switch } from 'react-router-dom'
 
-import Nav from './components/Nav'
-import Options from './components/Options'
-
+import { Nav, Options } from './components'
 import { Home, About, Projects, Contact } from './pages'
 
 class App extends Component {

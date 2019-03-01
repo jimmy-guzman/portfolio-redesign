@@ -1,0 +1,8 @@
+export { default as DaySVG } from './DaySVG'
+export { default as DemoSVG } from './DemoSVG'
+export { default as EmailSVG } from './EmailSVG'
+export { default as GithubSVG } from './GithubSVG'
+export { default as LinkedinSVG } from './LinkedinSVG'
+export { default as NextSVG } from './NextSVG'
+export { default as NightSVG } from './NightSVG'
+export { default as PrevSVG } from './PrevSVG'

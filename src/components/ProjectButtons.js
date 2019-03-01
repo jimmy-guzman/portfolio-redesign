@@ -1,8 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
-import NextSVG from './SVGs/NextSVG'
-import PrevSVG from './SVGs/PrevSVG'
+import { NextSVG, PrevSVG } from './SVGs'
 
 const ProjectButtons = ({ renderNext, renderPrev }) => (
   <div className='projects__buttons'>
