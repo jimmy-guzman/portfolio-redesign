@@ -2,7 +2,7 @@ import React from 'react'
 import { bool, shape, string, func } from 'prop-types'
 
 import TechList from './TechList'
-import { GithubSVG, DemoSVG } from './SVGs'
+import { GithubSVG, DemoSVG } from './svgs'
 import { ProgressBar, Indeterminate } from './styles/ProgressBar'
 
 const Project = ({

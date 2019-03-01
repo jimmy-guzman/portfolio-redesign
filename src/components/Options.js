@@ -1,8 +1,8 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import { NavLink } from 'react-router-dom'
-// import DaySVG from "./SVGs/DaySVG";
-// import NightSVG from "./SVGs/NightSVG";
+// import DaySVG from "./svgs/DaySVG";
+// import NightSVG from "./svgs/NightSVG";
 
 const Options = ({ isEnglish, updateLang }) => (
   <div className='options'>

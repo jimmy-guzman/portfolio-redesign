@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 
 import contact from '../data/contact.json'
 
-import { GithubSVG, EmailSVG, LinkedinSVG } from '../components/SVGs'
+import { GithubSVG, EmailSVG, LinkedinSVG } from '../components/svgs'
 
 const Contact = ({ isEnglish }) => (
   <main className='light'>
