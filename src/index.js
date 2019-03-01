@@ -5,7 +5,7 @@ import { render } from 'react-dom'
 import { ThemeProvider } from 'styled-components'
 
 import WebFont from 'webfontloader'
-import App from './components/App'
+import App from './App'
 
 WebFont.load({
   google: {

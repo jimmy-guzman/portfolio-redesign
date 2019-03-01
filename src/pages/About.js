@@ -2,7 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import about from '../data/about.json'
 
-import TechList from './TechList'
+import TechList from '../components/TechList'
 
 const About = ({ isEnglish }) => (
   <main className='light'>

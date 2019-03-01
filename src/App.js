@@ -1,13 +1,10 @@
 import React, { Component } from 'react'
 import { BrowserRouter, Route, Switch } from 'react-router-dom'
 
-import Nav from './Nav'
-import Options from './Options'
+import Nav from './components/Nav'
+import Options from './components/Options'
 
-import Home from './Home'
-import About from './About'
-import Projects from './Projects'
-import Contact from './Contact'
+import { Home, About, Projects, Contact } from './pages'
 
 class App extends Component {
   state = {
