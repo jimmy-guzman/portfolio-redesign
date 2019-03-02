@@ -1,8 +1,8 @@
 import React from 'react'
-import PropTypes from 'prop-types'
+import { bool, func } from 'prop-types'
 import { NavLink } from 'react-router-dom'
-// import DaySVG from "./SVGs/DaySVG";
-// import NightSVG from "./SVGs/NightSVG";
+// import DaySVG from "./svgs/DaySVG";
+// import NightSVG from "./svgs/NightSVG";
 
 const Options = ({ isEnglish, updateLang }) => (
   <div className='options'>
@@ -19,16 +19,18 @@ const Options = ({ isEnglish, updateLang }) => (
     </NavLink>
     <div className='options__lang'>
       <button
+        data-lang='spanish'
         className={!isEnglish ? 'btn__primary active' : 'btn__primary'}
         type='button'
-        onClick={() => updateLang('spanish')}
+        onClick={updateLang}
       >
         SP
       </button>
       <button
+        data-lang='english'
         type='button'
         className={isEnglish ? 'btn__primary active' : 'btn__primary'}
-        onClick={() => updateLang('english')}
+        onClick={updateLang}
       >
         ENG
       </button>
@@ -37,8 +39,8 @@ const Options = ({ isEnglish, updateLang }) => (
 )
 
 Options.propTypes = {
-  isEnglish: PropTypes.bool.isRequired,
-  updateLang: PropTypes.func.isRequired
+  isEnglish: bool.isRequired,
+  updateLang: func.isRequired
 }
 
 export default Options

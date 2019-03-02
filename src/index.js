@@ -1,11 +1,11 @@
-import 'normalize.css'
-import './scss/index.scss'
 import React from 'react'
 import { render } from 'react-dom'
 import { ThemeProvider } from 'styled-components'
+import 'normalize.css'
+import './scss/index.scss'
 
 import WebFont from 'webfontloader'
-import App from './components/App'
+import App from './App'
 
 WebFont.load({
   google: {

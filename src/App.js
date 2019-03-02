@@ -1,15 +1,10 @@
-import React, { Component } from 'react'
+import React, { PureComponent } from 'react'
 import { BrowserRouter, Route, Switch } from 'react-router-dom'
 
-import Nav from './Nav'
-import Options from './Options'
+import { Nav, Options } from './components'
+import { Home, About, Projects, Contact, NotFound } from './pages'
 
-import Home from './Home'
-import About from './About'
-import Projects from './Projects'
-import Contact from './Contact'
-
-class App extends Component {
+class App extends PureComponent {
   state = {
     isEnglish: true,
     appHeight: window.innerHeight
@@ -27,8 +22,8 @@ class App extends Component {
     this.setState({ appHeight: window.innerHeight })
   }
 
-  updateLang = newLanguage => {
-    const isEnglish = newLanguage === 'english'
+  updateLang = e => {
+    const isEnglish = e.target.dataset.lang === 'english'
 
     this.setState({ isEnglish })
   }
@@ -58,11 +53,7 @@ class App extends Component {
               path='/contact'
               render={() => <Contact isEnglish={isEnglish} />}
             />
-            <Route
-              render={() => (
-                <h2>404 Error: URL does not match any existing paths!</h2>
-              )}
-            />
+            <Route component={NotFound} />
           </Switch>
           <Nav isEnglish={isEnglish} />
         </div>

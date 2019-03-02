@@ -2,28 +2,27 @@ import React from 'react'
 import { bool, shape, string, func } from 'prop-types'
 
 import TechList from './TechList'
-import GithubSVG from './SVGs/GithubSVG'
-import DemoSVG from './SVGs/DemoSVG'
+import { GithubSVG, DemoSVG } from './svgs'
 import { ProgressBar, Indeterminate } from './styles/ProgressBar'
 
 const Project = ({
-  project,
+  project: { repo, name, tech, description, spanish, url },
   isEnglish,
   onProjectImageLoaded,
   loadingProjectImage
 }) => {
   const imgixUrl = `https://jimmy-guzman.imgix.net/project-screenshots/`
   const imgParams = `png?w=400?fm=png&auto=format`
-  const imgUrl = `${imgixUrl + project.repo}.${imgParams}`
+  const imgUrl = `${imgixUrl + repo}.${imgParams}`
 
   return (
     <div className='project grid__row'>
       <div className='project__image card'>
         <div className='project__bar'>
-          <span>{project.name}</span>
+          <span>{name}</span>
           <div className='project__links'>
             <a
-              href={project.url}
+              href={url}
               target='_blank'
               rel='noopener noreferrer'
               aria-label='View Demo'
@@ -31,7 +30,7 @@ const Project = ({
               <DemoSVG height='24' width='24' />
             </a>
             <a
-              href={`https://github.com/jimmy-guzman/${project.repo}`}
+              href={`https://github.com/jimmy-guzman/${repo}`}
               target='_blank'
               rel='noopener noreferrer'
               aria-label='View Repo'
@@ -49,18 +48,16 @@ const Project = ({
           <img
             style={{ ...(loadingProjectImage && { visibility: 'hidden' }) }}
             onLoad={onProjectImageLoaded}
-            alt={`${project.name}`}
+            alt={name}
             srcSet={`${imgUrl} 1x,
         ${imgUrl}&fit=max&q=40&dpr=2 2x,
         ${imgUrl}&fit=max&q=20&dpr=3 3x`}
-            src={`${imgUrl}`}
+            src={imgUrl}
           />
         </div>
         <div className='project__info'>
-          <TechList techs={project.tech} />
-          <p className='project__desc'>
-            {isEnglish ? project.description : project.spanish}
-          </p>
+          <TechList techs={tech} />
+          <p className='project__desc'>{isEnglish ? description : spanish}</p>
         </div>
       </div>
     </div>

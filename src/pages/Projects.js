@@ -1,10 +1,10 @@
-import React, { Component } from 'react'
-import PropTypes from 'prop-types'
+import React, { PureComponent } from 'react'
+import { bool } from 'prop-types'
 import { projects } from '../data/projects.json'
-import Project from './Project'
-import ProjectButtons from './ProjectButtons'
 
-class Projects extends Component {
+import { Project, ProjectButtons } from '../components'
+
+class Projects extends PureComponent {
   state = {
     projectIndex: 0,
     loadingProjectImage: true
@@ -62,7 +62,7 @@ class Projects extends Component {
 }
 
 Projects.propTypes = {
-  isEnglish: PropTypes.bool.isRequired
+  isEnglish: bool.isRequired
 }
 
 export default Projects
