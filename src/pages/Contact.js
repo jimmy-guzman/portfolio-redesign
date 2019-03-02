@@ -5,6 +5,8 @@ import contact from '../data/contact.json'
 
 import { GithubSVG, EmailSVG, LinkedinSVG } from '../components/svgs'
 
+const EMAIL = 'hello@jimmyguzman.com'
+
 const Contact = ({ isEnglish }) => (
   <main className='light'>
     <section className='contact grid__row'>
@@ -36,7 +38,7 @@ const Contact = ({ isEnglish }) => (
           </li>
         </ul>
         <p>
-          <a href='mailto:hello@jimmyguzman.com'>hello@jimmyguzman.com</a>
+          <a href='mailto:hello@jimmyguzman.com'>{EMAIL}</a>
         </p>
       </div>
     </section>

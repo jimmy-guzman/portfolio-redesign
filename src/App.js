@@ -22,8 +22,8 @@ class App extends Component {
     this.setState({ appHeight: window.innerHeight })
   }
 
-  updateLang = newLanguage => {
-    const isEnglish = newLanguage === 'english'
+  updateLang = e => {
+    const isEnglish = e.target.dataset.lang === 'english'
 
     this.setState({ isEnglish })
   }

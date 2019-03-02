@@ -19,16 +19,18 @@ const Options = ({ isEnglish, updateLang }) => (
     </NavLink>
     <div className='options__lang'>
       <button
+        data-lang='spanish'
         className={!isEnglish ? 'btn__primary active' : 'btn__primary'}
         type='button'
-        onClick={() => updateLang('spanish')}
+        onClick={updateLang}
       >
         SP
       </button>
       <button
+        data-lang='english'
         type='button'
         className={isEnglish ? 'btn__primary active' : 'btn__primary'}
-        onClick={() => updateLang('english')}
+        onClick={updateLang}
       >
         ENG
       </button>
