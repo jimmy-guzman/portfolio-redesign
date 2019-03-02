@@ -1,10 +1,10 @@
-import React, { Component } from 'react'
+import React, { PureComponent } from 'react'
 import { bool } from 'prop-types'
 import { projects } from '../data/projects.json'
 
 import { Project, ProjectButtons } from '../components'
 
-class Projects extends Component {
+class Projects extends PureComponent {
   state = {
     projectIndex: 0,
     loadingProjectImage: true

@@ -1,10 +1,10 @@
-import React, { Component } from 'react'
+import React, { PureComponent } from 'react'
 import { BrowserRouter, Route, Switch } from 'react-router-dom'
 
 import { Nav, Options } from './components'
 import { Home, About, Projects, Contact, NotFound } from './pages'
 
-class App extends Component {
+class App extends PureComponent {
   state = {
     isEnglish: true,
     appHeight: window.innerHeight
