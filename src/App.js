@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import { BrowserRouter, Route, Switch } from 'react-router-dom'
 
 import { Nav, Options } from './components'
-import { Home, About, Projects, Contact } from './pages'
+import { Home, About, Projects, Contact, NotFound } from './pages'
 
 class App extends Component {
   state = {
@@ -53,11 +53,7 @@ class App extends Component {
               path='/contact'
               render={() => <Contact isEnglish={isEnglish} />}
             />
-            <Route
-              render={() => (
-                <h2>404 Error: URL does not match any existing paths!</h2>
-              )}
-            />
+            <Route component={NotFound} />
           </Switch>
           <Nav isEnglish={isEnglish} />
         </div>
